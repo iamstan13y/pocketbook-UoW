@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "kS4rZZSJDMknC/Y1JMV+Zl7uAZGKe0yH1DHtfNwNq9hQKVN8QDG8Dyg3r+VSV4sXbGHRbDCCFz5vevp+VGR+TQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Keith Stanley\\Documents\\GitHub\\PocketBook\\PocketBook.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Keith Stanley\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\Keith Stanley\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Keith Stanley\\.nuget\\packages\\swashbuckle.aspnetcore\\6.1.5\\swashbuckle.aspnetcore.6.1.5.nupkg.sha512",
+    "C:\\Users\\Keith Stanley\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.1.5\\swashbuckle.aspnetcore.swagger.6.1.5.nupkg.sha512",
+    "C:\\Users\\Keith Stanley\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.1.5\\swashbuckle.aspnetcore.swaggergen.6.1.5.nupkg.sha512",
+    "C:\\Users\\Keith Stanley\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.1.5\\swashbuckle.aspnetcore.swaggerui.6.1.5.nupkg.sha512"
+  ],
+  "logs": []
+}
