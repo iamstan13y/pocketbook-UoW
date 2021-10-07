@@ -1,8 +1,13 @@
+using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
+using PocketBook.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseSqlite(Configuration.GetConnectionString("DefaultConnection"))
+);
 
 builder.Services.AddControllers();
 builder.Services.AddSwaggerGen(c =>

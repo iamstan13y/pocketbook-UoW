@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Keith Stanley\\Documents\\GitHub\\PocketBook\\PocketBook.csproj": {}
+    "c:\\Users\\Keith Stanley\\Documents\\GitHub\\PocketBook\\PocketBook.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Keith Stanley\\Documents\\GitHub\\PocketBook\\PocketBook.csproj": {
+    "c:\\Users\\Keith Stanley\\Documents\\GitHub\\PocketBook\\PocketBook.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Keith Stanley\\Documents\\GitHub\\PocketBook\\PocketBook.csproj",
+        "projectUniqueName": "c:\\Users\\Keith Stanley\\Documents\\GitHub\\PocketBook\\PocketBook.csproj",
         "projectName": "PocketBook",
-        "projectPath": "C:\\Users\\Keith Stanley\\Documents\\GitHub\\PocketBook\\PocketBook.csproj",
+        "projectPath": "c:\\Users\\Keith Stanley\\Documents\\GitHub\\PocketBook\\PocketBook.csproj",
         "packagesPath": "C:\\Users\\Keith Stanley\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Keith Stanley\\Documents\\GitHub\\PocketBook\\obj\\",
+        "outputPath": "c:\\Users\\Keith Stanley\\Documents\\GitHub\\PocketBook\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

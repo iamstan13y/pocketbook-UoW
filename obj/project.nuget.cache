@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "g6iJHlnOu2cjosc9ZF0o6sfRvjGm+TLI+pL2R7YqnqzFNmD+hMW/KIxn9/cglvm7DpFy5nmNZUNd4ZMv/7FtFQ==",
+  "dgSpecHash": "OAYci3WTXfiAzeH+bDSeqaJGk7W7nc7ExXj+YdxwGAOUvblLlR6q+VlfvGx7xCoMvzr0iAOVv5u29vF4lfAfIw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Keith Stanley\\Documents\\GitHub\\PocketBook\\PocketBook.csproj",
+  "projectFilePath": "c:\\Users\\Keith Stanley\\Documents\\GitHub\\PocketBook\\PocketBook.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Keith Stanley\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Keith Stanley\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.10\\microsoft.aspnetcore.cryptography.internal.5.0.10.nupkg.sha512",
