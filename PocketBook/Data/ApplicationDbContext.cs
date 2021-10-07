@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using Models;
+using PocketBook.Models;
 
 namespace PocketBook.Data
 {
@@ -12,5 +12,10 @@ namespace PocketBook.Data
         {
             
         }
+        // public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+        // : base(options)
+        // {
+            
+        // }
     }
 }

@@ -1,6 +1,6 @@
 using System;
 
-namespace Models
+namespace PocketBook.Models
 {
     public class User
     {
