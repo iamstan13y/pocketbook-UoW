@@ -29,7 +29,7 @@ namespace PocketBook
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlite(Configuration.GetConnectionString("DefaultCOnnection"))
+                options.UseSqlite(Configuration.GetConnectionString("DefaultConnection"))
             );
             services.AddControllers();
             services.AddSwaggerGen(c =>
