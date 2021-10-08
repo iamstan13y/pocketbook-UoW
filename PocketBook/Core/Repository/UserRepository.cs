@@ -55,5 +55,27 @@ namespace PocketBook.Core.Repository
                 return false;  
             }
         }
+
+        public override async Task<bool> Delete(Guid id)
+        {
+            try
+            {
+                var exist = await dbSet.Where(x => x.Id == id).FirstOrDefaultAsync();
+
+                if (exist != null)
+                {
+                    dbSet.Remove(exist);
+                    return true;
+                }
+
+                return false;
+
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "{Repo} Delete method error", typeof(UserRepository));
+                return false;  
+            }
+        }
     }
 }
