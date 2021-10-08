@@ -1,4 +1,5 @@
 using System;
+using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
 using PocketBook.Core.IConfiguration;
 using PocketBook.Core.IRepository;
@@ -22,6 +23,11 @@ namespace PocketBook.Data
             _logger = loggerFactory.CreateLogger("logs");
 
             Users = new UserRepository(_context, _logger);
+        }
+
+        public async Task CompleteAsync()
+        {
+            await _context.SaveChangesAsync();
         }
     }
 }
