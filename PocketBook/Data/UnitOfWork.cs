@@ -29,5 +29,10 @@ namespace PocketBook.Data
         {
             await _context.SaveChangesAsync();
         }
+
+        public void Dispose()
+        {
+           _context.Dispose();
+        }
     }
 }
