@@ -6,6 +6,7 @@ using PocketBook.Data;
 using PocketBook.Models;
 using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
+using System.Linq;
 
 namespace PocketBook.Core.Repository
 {
@@ -29,6 +30,29 @@ namespace PocketBook.Core.Repository
             {
                 _logger.LogError(ex, "{Repo} All method error", typeof(UserRepository));
                 return new List<User>();
+            }
+        }
+
+        public override async Task<bool> Upsert(User entity)
+        {
+            try
+            {
+                var existingUser = await dbSet.Where(x => x.Id == entity.Id)
+                                                .FirstOrDefaultAsync();
+
+                if (existingUser == null)
+                    return await Add(entity);
+
+                existingUser.FirstName = entity.FirstName;
+                existingUser.LastName = entity.LastName;
+                existingUser.Email = entity.Email;
+
+                return true;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "{Repo} Upsert method error", typeof(UserRepository));
+                return false;  
             }
         }
     }
