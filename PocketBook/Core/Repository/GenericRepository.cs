@@ -23,28 +23,28 @@ namespace PocketBook.Core.Repository
             _logger = logger;
         }
 
-        public async Task<IEnumerable<T>> All()
+        public virtual async Task<IEnumerable<T>> All()
         {
             return await dbSet.ToListAsync();
         }
 
-        public async Task<T> GetById(Guid id)
+        public virtual async Task<T> GetById(Guid id)
         {
             return await dbSet.FindAsync(id);
         }
 
-        public async Task<bool> Add(T entity)
+        public virtual async Task<bool> Add(T entity)
         {
             await dbSet.AddAsync(entity);
             return true;
         }
 
-        public Task<bool> Delete(Guid id)
+        public virtual Task<bool> Delete(Guid id)
         {
 
         }
 
-        public Task<bool> Upsert(T entity)
+        public virtual Task<bool> Upsert(T entity)
         {
             
         }  
