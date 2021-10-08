@@ -41,12 +41,12 @@ namespace PocketBook.Core.Repository
 
         public virtual Task<bool> Delete(Guid id)
         {
-
+            throw new NotImplementedException();
         }
 
         public virtual Task<bool> Upsert(T entity)
         {
-            
+            throw new NotImplementedException();
         }  
     }
 }
