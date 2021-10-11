@@ -74,7 +74,7 @@ namespace PocketBook.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteItem(Guid id)
         {
-            var item = await _unitOfWork.Users.GetById();
+            var item = await _unitOfWork.Users.GetById(id);
 
             if (item == null)
                 return BadRequest();
