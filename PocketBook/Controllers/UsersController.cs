@@ -9,7 +9,7 @@ using PocketBook.Models;
 namespace PocketBook.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class UsersController : ControllerBase
     {
         private readonly ILogger<UsersController> _logger;
@@ -40,7 +40,7 @@ namespace PocketBook.Controllers
             return new JsonResult("Something went wrong bro!") { StatusCode = 500};
         }
 
-        [HttpGet]
+        [HttpGet("{id}")]
         public async Task<IActionResult> GetItem(Guid id)
         {
             var user = await _unitOfWork.Users.GetById(id);
@@ -49,6 +49,14 @@ namespace PocketBook.Controllers
                 return NotFound();
 
             return Ok(user);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Get()
+        {
+            var users = await _unitOfWork.Users.All();
+
+            return Ok(users);
         }
     }
 }
