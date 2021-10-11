@@ -70,5 +70,19 @@ namespace PocketBook.Controllers
 
             return NoContent();
         }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteItem(Guid id)
+        {
+            var item = await _unitOfWork.Users.GetById();
+
+            if (item == null)
+                return BadRequest();
+
+            await _unitOfWork.Users.Delete(id);
+            await _unitOfWork.CompleteAsync();
+
+            return Ok(item);
+        }
     }
 }
