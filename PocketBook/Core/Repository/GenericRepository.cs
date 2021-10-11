@@ -21,6 +21,7 @@ namespace PocketBook.Core.Repository
         {
             _context = context;
             _logger = logger;
+            dbSet = _context.Set<T>();
         }
 
         public virtual async Task<IEnumerable<T>> All()
